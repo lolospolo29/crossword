@@ -78,3 +78,4 @@
 /Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/BlazorApp1.pdb
 /Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/BlazorApp1.genruntimeconfig.cache
 /Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/ref/BlazorApp1.dll
+/Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.AssemblyReference.cache
