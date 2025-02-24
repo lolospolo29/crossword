@@ -10,7 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-var app = builder.Build();
 
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDbSettings"));
 
@@ -19,6 +18,14 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
     var settings = sp.GetRequiredService<IOptions<MongoDbSettings>>().Value;
     return new MongoClient(settings.ConnectionString);
 });
+
+builder.Services.AddSingleton<CrossWordRepository>(sp =>
+{
+    var mongo = sp.GetRequiredService<IMongoClient>();
+    return new CrossWordRepository(mongo);
+});
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

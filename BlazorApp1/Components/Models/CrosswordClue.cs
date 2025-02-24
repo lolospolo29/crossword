@@ -1,4 +1,4 @@
-namespace BlazorApp1.Components.Modells;
+namespace BlazorApp1.Components.Models;
 public class CrosswordClue
 {
     public string Clue { get; set; } = string.Empty; // Die eigentliche Frage

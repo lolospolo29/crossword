@@ -79,3 +79,11 @@
 /Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/BlazorApp1.genruntimeconfig.cache
 /Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/ref/BlazorApp1.dll
 /Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.AssemblyReference.cache
+/Users/lauris/Desktop/crossword/BlazorApp1/bin/Debug/net9.0/Components/Models/clue.json
+/Users/lauris/Desktop/crossword/BlazorApp1/bin/Debug/net9.0/DnsClient.dll
+/Users/lauris/Desktop/crossword/BlazorApp1/bin/Debug/net9.0/MongoDB.Bson.dll
+/Users/lauris/Desktop/crossword/BlazorApp1/bin/Debug/net9.0/MongoDB.Driver.dll
+/Users/lauris/Desktop/crossword/BlazorApp1/bin/Debug/net9.0/SharpCompress.dll
+/Users/lauris/Desktop/crossword/BlazorApp1/bin/Debug/net9.0/Snappier.dll
+/Users/lauris/Desktop/crossword/BlazorApp1/bin/Debug/net9.0/ZstdSharp.dll
+/Users/lauris/Desktop/crossword/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.Up2Date

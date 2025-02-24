@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
-namespace BlazorApp1.Components.Modells;
+using MongoDB.Bson;
+
+namespace BlazorApp1.Components.Models;
 
 public class CrosswordPuzzle
 {
-    [Key]
-    public int Id { get; set; }  // Primärschlüssel für die Datenbank
+    public ObjectId Id { get; set; }
 
     public string Title { get; set; } = "Unbenanntes Rätsel";
 
@@ -34,21 +35,4 @@ public class CrosswordPuzzle
     {
         GridJson = JsonSerializer.Serialize(grid);
     }
-
-    /// <summary>
-    /// Holt die Hinweise aus dem JSON-Format
-    /// </summary>
-    public List<CrossWordClue> GetClues()
-    {
-        return JsonSerializer.Deserialize<List<CrosswordClue>>(CluesJson) ?? new List<CrosswordClue>();
-    }
-
-    /// <summary>
-    /// Speichert Hinweise als JSON
-    /// </summary>
-    public void SetClues(List<CrosswordClue> clues)
-    {
-        CluesJson = JsonSerializer.Serialize(clues);
-    }
 }
-
