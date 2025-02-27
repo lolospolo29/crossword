@@ -17,4 +17,11 @@ public class CrossWordRepository
 
         return await collection.Find(_ => true).ToListAsync(); // Fetch all documents
     }
+    public async Task InsertCrosswordPuzzleAsync(CrosswordPuzzle puzzle)
+    {
+        var database = _client.GetDatabase("CrossWord");
+        var collection = database.GetCollection<CrosswordPuzzle>("CrossWordPuzzle");
+
+        await collection.InsertOneAsync(puzzle);
+    }
 }
